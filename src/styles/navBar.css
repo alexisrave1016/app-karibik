@@ -1,0 +1,68 @@
+body{  min-height: 100vh;
+
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.Navbar_container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    flex-direction: column;
+    background: black;
+    width:100vh;
+    
+}
+.titulo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.titulo h4{
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: white;
+}
+.navbar_superior{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    border-radius: 3px;
+    margin: auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.opciones{
+    display: flex;
+    align-items: center;
+   
+}
+.Selecion{
+    margin: 0px 10px;
+    color: white;
+}
+
+.Rebajas{
+    color: red;
+}
+.icon{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_logo{
+    width: 30px;
+    height: 30px;
+}
