@@ -1,11 +1,47 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import Card from '../components/Card'
 import { Navbar } from '../components/Navbar'
 
+const url='https://api-alexisrave-anime.herokuapp.com/karibik'
+
 const App = () => {
+
+  const [productos,setProductos]= useState([])
+
+  const peticionGet= async()=>{
+    await axios.get(url)
+    .then(resp=>{
+      setProductos(resp.data)
+    }).catch(error=>{
+      console.log(error)
+    })
+  }
+
+
+
+  useEffect(()=>{
+    peticionGet()
+  },[])
+
   return (
-    <div className='container_principal'>
+    <div className='App-containers'>
     <Navbar/>
-    <div>Hola Mundo</div>
+    <div className='productos_container'>
+      <h1>Productos</h1>
+      <div className='productos_pintar'>
+        {
+          productos.map(item=>(
+            <Card
+            key={item.titulo}
+            productos={productos}
+            card={item}
+            
+            />
+          ))
+        }
+      </div>
+    </div>
     </div>
   )
 }

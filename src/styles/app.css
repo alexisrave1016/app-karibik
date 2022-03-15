@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.App-containers{
+    background-color: #f7f7f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+    height: 1100px;
+}
+.productos_container{
+    background-color: #f7f7f5;
+    
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+ 
+}
+.productos_pintar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 100%;
+}
+.contenido_productos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
