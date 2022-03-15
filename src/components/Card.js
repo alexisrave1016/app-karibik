@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = (props) => {
 
-    const {id,producto,precio,tipo,imagen}=props.card;
+    const {producto,precio,imagen}=props.card;
 
     const {handleOnClick}= props;
 
